@@ -1,155 +1,130 @@
-* {
-	font-size: 24pt;
-	font-family: monospace;
-	scroll-behavior: smooth;
-	scroll-margin-top: 200px;
-	max-width: 100svw;
-}
-
-::selection {
-	color: black;
-	background-color: #c4b4a1;
-}
-
-body {
-	background-color: #0f0f0f;
-	letter-spacing: 1px;
-	font-weight: 100;
+*{
+   font-size: 20px;
+   box-sizing: border-box;
+   margin: 0;
 }
 
 #logo {
-	mix-blend-mode: multiply;
-	float: left;
-	margin-right: 40px;
-	border: 0;
-	padding: 0;
+    float: left;
+    width: 10svh;
+    height: 10svh;
+    margin-right: 15px;
 }
 
-#navi {
-	margin: 0;
-	padding: 10px;
-	border: 10px solid;
-	border-radius: 20px;
-	border-color: #0f0f0f;
-	width: calc(100svw - 65px);
-	height: 150px;
-	background-color: #c4b4a1;
-	position: sticky;
-	top: 10px;
+header {
+    height: 10svh;
 }
 
-#fast-links {
-	position: relative;
-	text-align: center;
+header h1 {
+    font-size: 5svh;
+    clear: right;
 }
 
-#fast-links div {
-	display: inline-block;
-	min-height: 20px;
+#flex-box container {
+    clear: both;
 }
 
-#fast-links div a {
-	text-decoration: none;
-	color: white;
-	padding: 5px;
+body{
+   color:#4B0082;
+   background-color: #a484f6;
 }
+.page-nav{
+   max-width: 960px;
+   max-height: 5svh;
+   margin: 0;
+   background-color: rgb(70, 174, 167);
+   float: right;
+ }
+ .page-nav li {
+   display: inline-block;
+   text-align: center;
+   margin: 0;
+   background-color: #8b31c4;
+   padding: 5px;
+   border: 2px solid #000000;
+   font-size: 0.5em;
+ }
 
-nav {
-	float: right;
-	padding: 5px;
-	background-color: #272727;
-	border-radius: 10px;
-	border: 5px;
-}
+ h2 {
+    font-size: 25pt;
+    text-align: center;
+    margin: 10px 0px;
+ }
 
-h1 {
-	clear: right;
-	font-size: 40pt;
-	
-}
+ div {
+   margin: 0;
+   max-width: 960px;
+ }
+ .link  {
+  margin: 0 auto;
+ }
+ li{
+  margin:0px auto;
+ }
+ ul{
+    margin: 0 auto;
+    list-style-type: none;
+ }
 
-.section {
-	margin: 40px 20px;
-	padding: 20px;
-	border: 2px solid;
-	border-radius: 20px;
-	border-color: #c4b4a1;
-	max-width: calc(100svw - 100px);
-	width: max-content;
-	background-color: #272727;
-}
+ a{
+     display: inline;
+     color: #000000;
+ }
+ a:hover{
+     text-decoration: underline;
+ }
+ .table{
 
-.section * {
-	margin: 10px;
-	color: white;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: auto;
+ }
+ th, td{
+     border: 1px solid black;
+ }
+ #form{
+  margin: 0 auto;
+  padding:0 auto;
+  align-items: center;
+ }
+ input, select, textarea{
+     outline: none;
+     border: 1px solid#e5e5e5;
+ }
+ input[type=submit],[type=radio], [type=date]{
+     cursor: pointer;
+ }
+ input[type=submit]{
+     background-color: rgb(255, 255, 255);
+ }
+ textarea{
+     resize: none;
+ }
+ header{
+     background-color: rgb(70, 174, 167);
+border-bottom: 5px solid #000000;
+ }
+ #main {
+   background-color: rgb(140, 239, 232);
+border: 5px solid #000000;
 }
-
-footer.section {
-	width: auto;
-	text-align: right;
-	color: white;
-}
-
-#ref-links {
-	clear: both;
-}
-
-#table table * {
-	border: 1px solid;
-	border-radius: 10px;
-	padding: 5px;
-	text-align: center;
-}
-
-#table td {
-	background-color: #c4b4a1;
-	color: black;
-	padding: 10px;
-	border-color: #c4b4a1;
-	font-size: 20pt;
-	max-width: 400px;
-}
-
-tbody tr:nth-child(odd) {
-	background-color: #C9E4F6;
-}
-
-tbody tr:nth-child(even) {
-	background-color: #C9E4F6;
-}
-
-#form input, select, textarea {
-	border: 1px solid #c4b4a1;
-	border-radius: 4px;
-	padding: 5px;
-	background-color: #272727;
-	outline: none;
-}
-
-#form input[type="radio"] {
-	font: inherit;
-	color: currentColor;
-	width: 0.75em;
-	height: 0.75em;
-	border: 0.15em solid currentColor;
-	border-radius: 50%;
-}
-
-#form option {
-	border-radius: 4px;
-}
-
-#form option:checked {
-	color: black;
-	background-color: #c4b4a1;
-}
-
-#form input[type="checkbox"] {
-	width: 0.75em;
-	height: 0.75em;
-}
-
-#form input[type="submit"]:hover {
-	color: black;
-	background-color: #c4b4a1;
-}
+  img {
+     border: 3px solid #000000;
+   }
+   .header_cont {
+     padding: 15px 10px 0 10px;
+     clear: both;
+   }
+   .header_cont div {
+     display: inline-block;
+     padding: 25px 0 0 10px;
+   }
+ .container{
+     width: 100%;
+ }
+ tr:nth-child(even){
+     background-color: #621ff4;
+ }
+ .footer{
+     background-color: rgb(100, 100, 167);
+ }
