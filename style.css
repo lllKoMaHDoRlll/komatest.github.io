@@ -9,19 +9,12 @@
     width: 10svh;
     height: 10svh;
     margin-right: 15px;
-}
 
-header {
-    height: 10svh;
 }
 
 header h1 {
     font-size: 5svh;
-    clear: right;
-}
-
-#flex-box container {
-    clear: both;
+    height: 10svh;
 }
 
 body{
@@ -29,11 +22,20 @@ body{
    background-color: #a484f6;
 }
 .page-nav{
-   max-width: 960px;
-   max-height: 5svh;
+   max-width: 100%;
    margin: 0;
    background-color: rgb(70, 174, 167);
-   float: right;
+   margin-top: 10px;
+   transform: translateX(-10svh);
+ }
+
+
+ .page-nav ul{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 0;
+    margin-left: 10px;
  }
  .page-nav li {
    display: inline-block;
@@ -47,17 +49,21 @@ body{
 
  h2 {
     font-size: 25pt;
-    text-align: center;
     margin: 10px 0px;
  }
 
+#content {
+    max-width: 960px;
+}
+
  div {
    margin: 0;
-   max-width: 960px;
+   max-width: 100%;
  }
+
  .link  {
   margin: 0 auto;
- }
+  }
  li{
   margin:0px auto;
  }
@@ -73,10 +79,8 @@ body{
  a:hover{
      text-decoration: underline;
  }
- .table{
 
-    border-collapse: collapse;
-    border: 1px solid black;
+ .table{
     margin: auto;
  }
  th, td{
@@ -116,7 +120,6 @@ border: 5px solid #000000;
      clear: both;
    }
    .header_cont div {
-     display: inline-block;
      padding: 25px 0 0 10px;
    }
  .container{
@@ -127,4 +130,18 @@ border: 5px solid #000000;
  }
  .footer{
      background-color: rgb(100, 100, 167);
+ }
+ @media screen and (width>= 576px){
+
+    .page-nav{
+        margin-top: 0;
+        transform: translateX(0);
+    }
+    .page-nav ul{
+        margin: unset;
+    }
+    header h1{
+        height: 100%;
+    }
+
  }
